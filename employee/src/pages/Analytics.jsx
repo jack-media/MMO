@@ -150,7 +150,7 @@ export default function AnalyticsPage() {
               </Text>
             </div>
             <div className="h-80">
-              <ResponsiveContainer width="100%" height="100%">
+              <ResponsiveContainer width="100%" height={320}>
                 <ComposedChart
                   data={monthlyTrendData}
                   margin={{ top: 12, right: 24, left: 0, bottom: 8 }}
@@ -218,7 +218,7 @@ export default function AnalyticsPage() {
               </Text>
             </div>
             <div className="h-80">
-              <ResponsiveContainer width="100%" height="100%">
+              <ResponsiveContainer width="100%" height={320}>
                 <PieChart>
                   <Pie
                     data={statusDistribution}
@@ -287,3 +287,4 @@ export default function AnalyticsPage() {
     </div>
   )
 }
+
